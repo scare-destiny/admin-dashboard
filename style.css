@@ -1,0 +1,219 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+}
+
+
+
+.sidebar {
+	font-family: 'Aldrich', sans-serif;
+	font-size: 2vw;
+	grid-row: 1/4;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	gap: 10px;
+	background-color: #B77BE0;
+}
+
+
+.sidebar * li {
+	padding: 10px 0px;
+}
+
+.sidebar, .header {
+	padding: 20px 20px;
+}
+
+
+.sidebar ul {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+/* .branding>p::before, .branding~.nav li::before {
+	content: url('./assets/battery-charging-50.svg');
+	margin-right: 5px;
+} */
+
+.nav>ul {
+	list-style-type: none;
+
+}
+
+.nav-first {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+
+
+.header {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	background-color: antiquewhite;
+}
+
+.header-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.header-welcome, .header-buttons {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding-top: 30px;
+}
+
+.header-buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+button {
+	font-family: 'Aldrich', sans-serif;
+	font-size: 1.5vw;
+	background-color: #B77BE0;
+	padding: 10px 25px;
+	margin: 0px 10px;
+	border-radius: 10px;
+}
+
+
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+
+.search-bar>img {
+	-webkit-filter: invert(100%);
+}
+
+form {
+	width: 90%;
+}
+
+input[type='search'] {
+	border: 2px solid #B77BE0;
+	border-radius: 16px;
+	box-shadow: 1px 1px 1px #94733A;
+	height: 32px;
+	padding: 0 10px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	outline: none;
+	width: 90%;
+
+}
+
+input[type='search']:focus {
+	border: 3px solid #B77BE0;
+
+}
+
+.avatar-small {
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+
+}
+
+.icon-welcome {
+	height: 64px;
+	width: 64px;
+	border-radius: 50%;
+	display: inline;
+}
+
+.para-greeting {
+	font-weight: bold;
+}
+
+.title {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.new-line {
+	font-size: 1.5rem;
+}
+
+
+.content {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 3fr 1fr;
+	padding-bottom: 20px;
+}
+
+.projects {
+	grid-row: 1/3;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-rows: repeat(3, 1fr);
+	gap: 10px;
+}
+
+.card {
+	border-left: thick double #7C5994;
+	height: auto;
+	display: grid;
+	gap: 20px;
+}
+
+.card, .announcements, .trending {
+	background-color: #A8E0C0;
+	padding: 20px 10px;
+	border-radius: 10px;
+
+}
+
+.announcements {
+	display: grid;
+	gap: 20px;
+	align-self: center;
+}
+
+.announcement:not(:last-child) {
+	border-bottom: 1px solid #7C5994;
+}
+
+.card, .announcements, .trending {
+	padding: 20px;
+	margin: 20px
+}
+
+.card-icons {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+	justify-self: end;
+}
+
+
+.trending {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	align-content: space-evenly;
+	align-items: center;
+	/* padding: 10px 11px; */
+	row-gap: 10px;
+	column-gap: 10px;
+}
+
+
+
+/* Use this layout for cards https://webdesign.tutsplus.com/articles/flexbox-vs-css-grid-which-should-you-use--cms-30184 */

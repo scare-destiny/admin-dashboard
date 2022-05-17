@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Admin Dashboard</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+	</style>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div class="branding">
+				<!-- <img src="" alt="Dashboard logo" class="logo"> -->
+				<p class="logo-text"><span class="material-icons">space_dashboard</span> Dashboard</p>
+			</div>
+			<div class="nav">
+				<ul class="nav-first">
+					<li><span class="material-icons">home</span> Home </li>
+					<li><span class="material-icons">person</span> Profile</li>
+					<li><span class="material-icons">drafts</span> Messages</li>
+					<li><span class="material-icons">history</span> History</li>
+					<li><span class="material-icons">event</span> Tasks</li>
+					<li><span class="material-icons">group</span> Communities</li>
+				</ul>
+				<ul class="nav-second">
+					<li><span class="material-icons">settings_suggest</span> Settings</li>
+					<li><span class="material-icons">support_agent</span> Support</li>
+					<li><span class="material-icons">admin_panel_settings</span> Privacy</li>
+				</ul>
+			</div>
+		</div>
+		<div class="header">
+			<div class="search-bar">
+				<span class="material-icons">search</span>
+				<form role="search" id="form">
+					<input type="search" name="q" id="query">
+				</form>
+			</div>
+			<div class="header-icons">
+				<span class="material-icons">notifications</span>
+				<img src="./assets/Animals/SVG/Avatar Notion-01.svg" alt="User Avatar" class="avatar-small">
+				<p class="title">Anastasiia Dyka</p>
+			</div>
+			<div class="header-welcome">
+				<img src="./assets/Animals/SVG/Avatar Notion-01.svg" alt="User Avatar" class="icon-welcome">
+				<p class="para-greeting">Hi there, <br> <span class="new-line">Anastasiia Dyka (@dykadesign) </span>
+				</p>
+			</div>
+			<div class="header-buttons">
+				<button type="submit">New</button>
+				<button type="submit">Upload</button>
+				<button type="submit">Share</button>
+			</div>
+		</div>
+		<div class="content">
+			<div class="projects">
+				<div class="card">
+					<div class="card-text">
+						<p class="title">Less Cool Project</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do .</p>
+					</div>
+					<div class="card-icons">
+						<span class="material-icons">note_add</span>
+						<span class="material-icons">visibility</span>
+						<span class="material-icons">share</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-text">
+						<p class="title">Less Cool Project</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+					</div>
+					<div class="card-icons">
+						<span class="material-icons">note_add</span>
+						<span class="material-icons">visibility</span>
+						<span class="material-icons">share</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-text">
+						<p class="title">Less Cool Project</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+					</div>
+					<div class="card-icons">
+						<span class="material-icons">note_add</span>
+						<span class="material-icons">visibility</span>
+						<span class="material-icons">share</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-text">
+						<p class="title">Less Cool Project</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+					</div>
+					<div class="card-icons">
+						<span class="material-icons">note_add</span>
+						<span class="material-icons">visibility</span>
+						<span class="material-icons">share</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-text">
+						<p class="title">Less Cool Project</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+					</div>
+					<div class="card-icons">
+						<span class="material-icons">note_add</span>
+						<span class="material-icons">visibility</span>
+						<span class="material-icons">share</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-text">
+						<p class="title">Less Cool Project</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+					</div>
+					<div class="card-icons">
+						<span class="material-icons">note_add</span>
+						<span class="material-icons">visibility</span>
+						<span class="material-icons">share</span>
+					</div>
+				</div>
+			</div>
+			<div class="announcements">
+				<!-- <p class="section-title">Announcements</p> -->
+				<div class="announcement">
+					<p class="title"> <strong> Site Maintenance </strong></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
+				</div>
+				<div class="announcement">
+					<p class="title"> <strong> Site Maintenance </strong></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
+				</div>
+
+				<div class="announcement">
+					<p class="title"> <strong> Site Maintenance </strong></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
+				</div>
+			</div>
+			<div class="trending">
+				<!-- <p class="announcements">Trending</p> -->
+				<img class="avatar-small " src="./assets/Animals/SVG/BEAR.svg" alt="">
+				<p>@mishka <br> Honey lover </p>
+				<img class="avatar-small " src="./assets/Animals/SVG/CIMPANZEE.svg" alt="">
+				<p>@monkey <br> Psst! </p>
+				<img class="avatar-small " src="./assets/Animals/SVG/OCTOPUS.svg" alt="">
+				<p>@mroctopus <br> Take my heart! </p>
+				<img class="avatar-small " src="./assets/Animals/SVG/PANDA.svg" alt="">
+				<p>@panda <br> World Peace Builder </p>
+			</div>
+		</div>
+</body>
+
+</html>
