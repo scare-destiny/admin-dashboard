@@ -20,7 +20,7 @@ body {
 
 .container {
 	display: grid;
-	grid-template-columns: minmax(150px, 25%) 1fr;
+	grid-template-columns: minmax(250px, 25%) 1fr;
 	min-height: 100vh;
 }
 
@@ -31,6 +31,7 @@ body {
 	font-size: 1.5rem;
 	grid-row: 1/4;
 	display: grid;
+
 	grid-template-rows: auto 1fr;
 	gap: 10px;
 	background-color: #B77BE0;
