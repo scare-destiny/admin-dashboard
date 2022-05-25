@@ -173,6 +173,13 @@ input[type='search']:focus {
 	padding-bottom: 20px;
 }
 
+@media (min-width: 370px) {
+	.content, .announcements, .trending {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
 .projects {
 	grid-row: 1/3;
 	display: grid;
