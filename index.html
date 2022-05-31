@@ -11,9 +11,24 @@
 		@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 	</style>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
+	<script src="./assets/code.js" defer></script>
 </head>
 
 <body>
+	<div class="w-nav-overlay">
+		<button id="closeBtn">Close menu</button>
+		<ul class="nav-mobile">
+			<li><span class="material-icons">home</span> Home </li>
+			<li><span class="material-icons">person</span> Profile</li>
+			<li><span class="material-icons">drafts</span> Messages</li>
+			<li><span class="material-icons">history</span> History</li>
+			<li><span class="material-icons">event</span> Tasks</li>
+			<li><span class="material-icons">group</span> Communities</li>
+			<li><span class="material-icons">settings_suggest</span> Settings</li>
+			<li><span class="material-icons">support_agent</span> Support</li>
+			<li><span class="material-icons">admin_panel_settings</span> Privacy</li>
+		</ul>
+	</div>
 	<div class="container">
 		<div class="sidebar">
 			<div class="branding">
@@ -38,12 +53,14 @@
 		</div>
 		<div class="header">
 			<div class="search-bar">
+				<span class="material-icons" id="menu">menu</span>
 				<span class="material-icons">search</span>
 				<form role="search" id="form">
 					<input type="search" name="q" id="query">
 				</form>
 			</div>
 			<div class="header-icons">
+
 				<span class="material-icons">notifications</span>
 				<img src="./assets/Animals/SVG/Avatar Notion-01.svg" alt="User Avatar" class="avatar-small">
 				<p class="title">Anastasiia Dyka</p>

@@ -26,6 +26,8 @@ body {
 
 
 
+
+
 .sidebar {
 	font-family: 'Aldrich', sans-serif;
 	font-size: 1.5rem;
@@ -57,7 +59,50 @@ body {
 	margin-right: 5px;
 } */
 
-.nav>ul {
+.w-nav-overlay {
+	display: none;
+	flex-direction: column;
+	height: 100vh;
+
+}
+
+#closeBtn {
+	max-width: 250px;
+}
+
+.nav-mobile {
+	align-self: center;
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	font-size: 2.5rem;
+	gap: 30px;
+
+}
+
+#menu {
+	display: none;
+}
+
+@media (max-width: 500px) {
+	.sidebar {
+		display: none;
+	}
+
+	.container {
+		grid-template-columns: initial;
+	}
+	#menu {
+		display: initial;
+		margin-right: 40px;
+		color: #B77BE0;
+		cursor: pointer;
+	}
+}
+
+.nav>ul, .w-nav-overlay>ul {
 	list-style-type: none;
 
 }
